@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Mode (Default) */
+  --color-background: #ffffff;
+  /* --color-text-primary: #111827; */ 
+  --color-text-primary: #000000; 
+  --color-text-secondary: #4b5563;
+  --color-accent: #2563eb; /* Blue-600 */
+  --color-accent-hover: #1d4ed8; /* Blue-700 */
+  --color-card-bg: #f3f4f6;
+  --color-border: #e5e7eb;
+  --color-nav: #ffffff;
+}
+
+:root[class~="dark"] {
+  /* Dark Mode */
+  --color-background: #0B0E14; /* Deep dark blue/black */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #9ca3af; /* Gray-400 */
+  --color-accent: #3b82f6; /* Blue-500 */
+  --color-accent-hover: #2563eb; /* Blue-600 */
+  --color-card-bg: #1f2937;
+  --color-border: #374151;
+  --color-nav: #000000;
+}
+
+html {
+  cursor: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+/* Main cursor */
+.cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-accent); /* Changed border to background for visibility */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 9999;
+  /* mix-blend-mode: difference; */
+}
+
+/* Follower cursor */
+.cursor-follower {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  background: rgba(120, 120, 120, 0.2); /* More neutral */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  z-index: 9998;
+}
+
+/* Hover state */
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0.8;
+}
+
+.cursor-follower.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background: rgba(var(--color-accent), 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-nav);
+  transition: color 0.3s ease;
+}
+
+nav a.active, nav a:hover {
+  color: var(--color-nav);
+}
+
+.icon {
+  width: 20px;
+  fill: var(--color-text-secondary);
+}
+
+
+/* Utilities */
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #a5b4fc); /* Default for dark mode actually */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root:not([class~="dark"]) .text-gradient {
+    background: linear-gradient(to right, #111827, #4f46e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0; /* Start hidden */
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; }
