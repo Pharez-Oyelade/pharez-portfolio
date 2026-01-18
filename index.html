@@ -6,6 +6,7 @@
     <title>Pharez Oyelade</title>
     <link href="./output.css" rel="stylesheet" />
     <script src="./script.js"></script>
+    <script src="./skills.js"></script>
   </head>
   <body>
     <div class="cursor"></div>
@@ -213,9 +214,16 @@
           <a
             href="#"
             class="p-2 rounded-full bg-(--color-card-bg) hover:text-(--color-accent) transition-colors"
-            ><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            ><svg
+              class="w-5 h-5"
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>X</title>
               <path
-                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
               /></svg
           ></a>
         </div>
@@ -238,7 +246,7 @@
         </div>
 
         <div class="max-w-2xl flex flex-col gap-5">
-          <h1 class="text-5xl font-extrabold">
+          <h1 class="text-3xl md:text-5xl font-extrabold">
             Building digital experiences with heart and logic
           </h1>
 
@@ -255,11 +263,11 @@
             not just how they work.
           </p>
 
-          <div class="">
-            <span class="text-xs text-(--color-text-secondary) font-bold pb-5"
+          <div>
+            <span class="text-xs text-(--color-text-secondary) font-bold"
               >CORE TECHNOLOGIES</span
             >
-            <div class="flex gap-5">
+            <div class="flex gap-5 flex-wrap">
               <div
                 class="flex gap-1 items-center bg-black/5 border border-white/10 rounded-xl backdrop-blur-2xl py-2 px-5 card w-auto"
               >
@@ -311,6 +319,147 @@
               <div></div>
               <div></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ......... SKILLS SECTION .............. -->
+    <section id="skills" class="py-20 bg-(--color-background-secondary)">
+      <div class="flex flex-col gap-5 text-center">
+        <h1 class="text-5xl font-bold">Skills & Technologies</h1>
+        <p class="text-(--color-text-secondary)">
+          I build accessible, high-performance interfaces with the modern web
+          stack.
+        </p>
+      </div>
+
+      <!-- skill cards -->
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center gap-5 my-20 mx-10 lg:mx-40"
+      >
+        <div
+          class="card bg-black/10 px-10 py-5 rounded-xl border border-gray-500 hover:border-(--color-accent) shadow-2xl hover:shadow-blue-200 hover:-translate-y-1 transition-all ease-in"
+        >
+          <div class="flex gap-2 items-center">
+            <div class="bg-(--color-accent)/20 p-3 rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2563eb"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-layers2-icon lucide-layers-2"
+              >
+                <path
+                  d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z"
+                />
+                <path
+                  d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Core Stack</h3>
+              <p class="text-sm">My daily drivers</p>
+            </div>
+          </div>
+
+          <hr class="text-(--color-text-secondary) my-5" />
+
+          <div class="flex flex-wrap items-center gap-2">
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">React</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">JavaScript</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Next.js</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Tailwind CSS</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">HTML5 & CSS3</p>
+          </div>
+        </div>
+
+        <div
+          class="card bg-black/10 py-5 px-10 rounded-xl border border-gray-500 hover:border-(--color-accent) shadow-2xl hover:shadow-blue-200 hover:-translate-y-1 transition-all ease-in"
+        >
+          <div class="flex gap-2 items-center">
+            <div class="bg-(--color-accent)/20 p-3 rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2563eb"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-layers2-icon lucide-layers-2"
+              >
+                <path
+                  d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z"
+                />
+                <path
+                  d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Tools</h3>
+              <p class="text-sm">Workflow optimization</p>
+            </div>
+          </div>
+
+          <hr class="text-(--color-text-secondary) my-5" />
+
+          <div class="flex flex-wrap items-center gap-2">
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Git & GitHub</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">npm</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Vercel</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Tanstack</p>
+          </div>
+        </div>
+
+        <div
+          class="card bg-black/10 py-5 px-10 rounded-xl border border-gray-500 hover:border-(--color-accent) shadow-2xl hover:shadow-blue-200 hover:-translate-y-1 transition-all ease-in"
+        >
+          <div class="flex gap-2 items-center">
+            <div class="bg-(--color-accent)/20 p-3 rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2563eb"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-layers2-icon lucide-layers-2"
+              >
+                <path
+                  d="M13 13.74a2 2 0 0 1-2 0L2.5 8.87a1 1 0 0 1 0-1.74L11 2.26a2 2 0 0 1 2 0l8.5 4.87a1 1 0 0 1 0 1.74z"
+                />
+                <path
+                  d="m20 14.285 1.5.845a1 1 0 0 1 0 1.74L13 21.74a2 2 0 0 1-2 0l-8.5-4.87a1 1 0 0 1 0-1.74l1.5-.845"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Backend & Data</h3>
+              <p class="text-sm">Server side capabilities</p>
+            </div>
+          </div>
+
+          <hr class="text-(--color-text-secondary) my-5" />
+
+          <div class="flex flex-wrap items-center gap-2">
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Node.js</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Express</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">MongoDB</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">PostgreSQL</p>
+            <p class="bg-black/20 px-5 py-2 rounded-2xl w-auto">Prisma</p>
           </div>
         </div>
       </div>

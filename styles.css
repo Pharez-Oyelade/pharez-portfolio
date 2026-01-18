@@ -3,6 +3,7 @@
 :root {
   /* Light Mode (Default) */
   --color-background: #ffffff;
+  --color-background-secondary: #F5F7FA;
   /* --color-text-primary: #111827; */ 
   --color-text-primary: #000000; 
   --color-text-secondary: #4b5563;
@@ -16,6 +17,7 @@
 :root[class~="dark"] {
   /* Dark Mode */
   --color-background: #0B0E14; /* Deep dark blue/black */
+  --color-background-secondary: #141820;
   --color-text-primary: #ffffff;
   --color-text-secondary: #9ca3af; /* Gray-400 */
   --color-accent: #3b82f6; /* Blue-500 */
