@@ -14,7 +14,7 @@
   --color-accent-hover: #1d4ed8; /* Blue-700 */
   --color-card-bg: #f3f4f6;
   --color-border: #e5e7eb;
-  --color-nav: #ffffff;
+  --color-nav: #000000;
   --color-tabs: #0000001A;
 }
 
@@ -28,7 +28,7 @@
   --color-accent-hover: #2563eb; /* Blue-600 */
   --color-card-bg: #1f2937;
   --color-border: #374151;
-  --color-nav: #000000;
+  --color-nav: #ffffff;
   --color-tabs: #FFFFFF1A;
 }
 
@@ -83,7 +83,7 @@ body {
 
 nav a {
   text-decoration: none;
-  color: var(--color-nav);
+  color: var(--color-text-secondary);
   transition: color 0.3s ease;
 }
 
