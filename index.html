@@ -473,7 +473,7 @@
 
         <h1 class="text-7xl font-extrabold py-5">Selected Work</h1>
 
-        <p class="text-xl text-(--color-text-secondary) max-w-150
+        <p class="text-xl text-(--color-text-secondary) max-w-150">
           A collection of digital products crafted with
           <span class="text-(--color-text-primary)">React</span>,
           <span class="text-(--color-text-primary)">Tailwind</span>, and a focus
@@ -482,7 +482,9 @@
 
         <!-- ......... FRAMERATES .............. -->
         <div class="py-20">
-          <div class="flex flex-col lg:flex-row justify-between items-center gap-20 group">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-20 group"
+          >
             <div class="w-full lg:w-1/2 overflow-hidden relative">
               <img
                 src="./images/framerate.webp"
@@ -640,7 +642,9 @@
 
         <!-- ......... VENDORA  .............. -->
         <div class="py-20">
-          <div class="flex flex-col lg:flex-row justify-between items-center gap-20 group">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-20 group"
+          >
             <div class="w-full lg:w-1/2 overflow-hidden relative">
               <img
                 src="./images/VENDORA.webp"
@@ -705,6 +709,84 @@
         </div>
       </div>
     </section>
+
+    <!-- ......... CASE STUDY SECTION .............. -->
+    <section id="case-study">
+      <div class="mx-40">
+        <div class="relative flex items-center">
+          <div
+            class="absolute top-1/2 translate-y-1/2 left-0 w-10 text-blue-500 bg-blue-500 border border-blue-500"
+          ></div>
+          <p class="indicator-text px-12 text-blue-500 font-bold">CASE STUDY</p>
+        </div>
+
+        <h1 class="text-6xl font-extrabold pt-5">Project Aesthesia:</h1>
+        <h2 class="text-6xl font-extrabold max-w-5xl pb-5">
+          Redefining the Online Shopping Experience
+        </h2>
+        <p class="text-2xl text-(--color-text-secondary)">
+          A modern storefront built to balance visual appeal with a seamless
+          shopping experience.
+        </p>
+
+        <!-- case study image -->
+        <div class="my-20">
+          <div
+            class="bg-(--color-background-secondary) w-full flex justify-center py-20 rounded-2xl group relative border border-gray-500 overflow-hidden"
+          >
+            <img
+              src="./images/aesthesia.webp"
+              alt=""
+              class="w-[75%] rounded-2xl group-hover:scale-[1.02] transition-transform duration-300 ease-in shadow-lg"
+            />
+
+            <div
+              class="absolute bottom-0 left-0 w-full bg-(--color-background) z-50 h-[15%] border-t border-gray-500 flex justify-between items-center px-20"
+            >
+              <div>
+                <span class="text-xs font-bold text-(--color-text-secondary)"
+                  >ROLE</span
+                >
+                <p class="text-lg">FullStack Engineer</p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-(--color-text-secondary)"
+                  >STACK</span
+                >
+                <p class="text-lg">React, Tailwind, Express, MongoDB</p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-(--color-text-secondary)"
+                  >DURATION</span
+                >
+                <p class="text-lg">3 Months</p>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-(--color-text-secondary)"
+                  >PLATFORM</span
+                >
+                <p class="text-lg">Web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article id="case-article" class="h-screen">
+          <aside class="sticky top-[20%]">
+            <div class="relative">
+              <h4 class="pl-3 font-bold text-lg">CONTENTS</h4>
+              <div
+                class="absolute top-1/2 -translate-y-1/2 left-0 w-0.5 h-5 border border-blue-500 bg-blue-500"
+              ></div>
+            </div>
+          </aside>
+
+          <div class="h-screen"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="h-screen"></section>
 
     <script>
       const cursor = document.querySelector(".cursor");
