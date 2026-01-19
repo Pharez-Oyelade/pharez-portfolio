@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss-cli -i ./styles.css -o ./dist/output.css --minify && copy index.html dist\\index.html"
-
+  "build": "npx tailwindcss-cli -i ./styles.css -o ./public/output.css --minify"
   },
   "keywords": [],
   "author": "",
