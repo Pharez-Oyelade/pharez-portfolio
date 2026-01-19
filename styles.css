@@ -111,6 +111,16 @@ nav a.active, nav a:hover {
   cursor: pointer;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
 
 /* Utilities */
 .text-gradient {
