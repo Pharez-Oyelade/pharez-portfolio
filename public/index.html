@@ -80,98 +80,103 @@
 
     <section
       id="hero"
-      class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden"
+      class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 pb-20 overflow-hidden"
     >
-      <!-- Background Glow (Optional) -->
+      <!-- Background Glow -->
       <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"
       ></div>
 
-      <!-- Badge -->
-      <div
-        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-(--color-border) bg-(--color-card-bg)/50 backdrop-blur-sm mb-8 animate-fade-in-up"
-      >
-        <span class="relative flex h-2 w-2">
+      <!-- Main Content Container -->
+      <div class="flex-1 flex flex-col justify-center items-center w-full">
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-(--color-border) bg-(--color-card-bg)/50 backdrop-blur-sm mb-6 md:mb-8 animate-fade-in-up"
+        >
+          <span class="relative flex h-2 w-2">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+            ></span>
+          </span>
           <span
-            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
-          ></span>
-          <span
-            class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
-          ></span>
-        </span>
-        <span
-          class="text-xs font-medium tracking-wide text-(--color-text-secondary) uppercase"
-          >Available for new projects</span
-        >
-      </div>
-
-      <!-- Headline -->
-      <h1
-        class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl text-(--color-text-primary) leading-tight animate-fade-in-up delay-100"
-      >
-        Crafting Performant <br />
-        <span class="text-gradient">Web Interfaces.</span>
-      </h1>
-
-      <!-- Subtext -->
-      <p
-        class="text-lg md:text-xl text-(--color-text-secondary) max-w-2xl mb-10 leading-relaxed animate-fade-in-up delay-200"
-      >
-        I’m a Frontend Developer specializing in
-        <strong class="text-(--color-text-primary)">React</strong> and
-        <strong class="text-(--color-text-primary)">Tailwind CSS</strong>. I
-        build accessible, responsive, and performant web applications that
-        deliver exceptional user experiences.
-      </p>
-
-      <!-- Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-        <a
-          href="#projects"
-          class="group relative px-8 py-3.5 bg-(--color-accent) hover:bg-(--color-accent-hover) text-white font-semibold rounded-lg transition-all hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2"
-        >
-          See My Work
-          <svg
-            class="w-4 h-4 transition-transform group-hover:translate-x-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+            class="text-xs font-medium tracking-wide text-(--color-text-secondary) uppercase"
+            >Available for new projects</span
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="#contact"
-          class="px-8 py-3.5 border border-(--color-border) text-(--color-text-primary) hover:bg-(--color-card-bg) font-medium rounded-lg transition-all flex items-center justify-center gap-2"
+        </div>
+
+        <!-- Headline -->
+        <h1
+          class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 max-w-4xl text-(--color-text-primary) leading-tight animate-fade-in-up delay-100"
         >
-          Get in Touch
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+          Crafting Performant <br />
+          <span class="text-gradient">Web Interfaces.</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p
+          class="text-base sm:text-lg md:text-xl text-(--color-text-secondary) max-w-2xl mb-8 md:mb-10 leading-relaxed animate-fade-in-up delay-200 px-4"
+        >
+          I'm a Frontend Developer specializing in
+          <strong class="text-(--color-text-primary)">React</strong> and
+          <strong class="text-(--color-text-primary)">Tailwind CSS</strong>. I
+          build accessible, responsive, and performant web applications that
+          deliver exceptional user experiences.
+        </p>
+
+        <!-- Buttons -->
+        <div
+          class="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto px-4 sm:px-0 animate-fade-in-up delay-300"
+        >
+          <a
+            href="#projects"
+            class="group relative px-6 md:px-8 py-3 md:py-3.5 bg-(--color-accent) hover:bg-(--color-accent-hover) text-white font-semibold rounded-lg transition-all hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2 text-sm md:text-base"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            ></path>
-          </svg>
-        </a>
+            See My Work
+            <svg
+              class="w-4 h-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="#contact"
+            class="px-6 md:px-8 py-3 md:py-3.5 border border-(--color-border) text-(--color-text-primary) hover:bg-(--color-card-bg) font-medium rounded-lg transition-all flex items-center justify-center gap-2 text-sm md:text-base"
+          >
+            Get in Touch
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </a>
+        </div>
       </div>
 
       <!-- Footer / Bottom Links -->
       <div
-        class="absolute bottom-8 left-0 right-0 px-8 flex flex-col md:flex-row justify-between items-center text-sm text-(--color-text-secondary) opacity-0 animate-fade-in delay-500"
+        class="absolute bottom-4 md:bottom-8 left-0 right-0 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-(--color-text-secondary) opacity-0 animate-fade-in delay-500 gap-3 md:gap-0"
         style="animation-fill-mode: forwards"
       >
-        <div class="flex items-center gap-2 mb-4 md:mb-0">
+        <div class="flex items-center gap-2">
           <svg
             class="w-4 h-4"
             fill="none"
@@ -194,7 +199,7 @@
           Based in Nigeria
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex gap-3 md:gap-4">
           <a
             href="https://github.com/Pharez-Oyelade"
             target="_blank"
