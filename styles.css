@@ -1,7 +1,7 @@
 @import "tailwindcss";
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   /* Light Mode (Default) */
@@ -15,6 +15,7 @@
   --color-card-bg: #f3f4f6;
   --color-border: #e5e7eb;
   --color-nav: #000000;
+  --color-nav-secondary: #5b5b5b;
   --color-tabs: #0000001A;
 }
 
@@ -29,6 +30,7 @@
   --color-card-bg: #1f2937;
   --color-border: #374151;
   --color-nav: #ffffff;
+  --color-nav-secondary: #828386;
   --color-tabs: #FFFFFF1A;
 }
 
@@ -83,7 +85,7 @@ body {
 
 nav a {
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: var(--color-nav-secondary);
   transition: color 0.3s ease;
 }
 
