@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
-      console.log("Toggle clicked");
+      //   console.log("Toggle clicked");
       if (html.classList.contains("dark")) {
         html.classList.remove("dark");
         localStorage.theme = "light";
