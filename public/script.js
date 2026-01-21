@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
   /* -------------------------------------------------------------------------- */
   const toggleBtn = document.getElementById("theme-toggle");
   const html = document.documentElement;
+  const sunIcon = document.getElementById("sun");
+  const moonIcon = document.getElementById("moon");
 
   // Check initialized preference
   if (
@@ -59,8 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
       window.matchMedia("(prefers-color-scheme: dark)").matches)
   ) {
     html.classList.add("dark");
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
   } else {
     html.classList.remove("dark");
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "block";
   }
 
   if (toggleBtn) {
@@ -69,9 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (html.classList.contains("dark")) {
         html.classList.remove("dark");
         localStorage.theme = "light";
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "block";
       } else {
         html.classList.add("dark");
         localStorage.theme = "dark";
+        sunIcon.style.display = "block";
+        moonIcon.style.display = "none";
       }
     });
   }
