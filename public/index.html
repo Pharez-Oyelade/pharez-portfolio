@@ -14,10 +14,14 @@
     <header
       class="fixed top-0 left-0 right-0 flex justify-between items-center px-[5%] py-6 z-50"
     >
-      <a href="#hero" class="text-2xl font-bold tracking-tighter">Pharez</a>
+      <a
+        href="#hero"
+        class="text-2xl font-bold tracking-tighter bg-(--color-tabs) backdrop-blur-lg px-4 py-2 rounded-2xl"
+        >Pharez</a
+      >
 
       <nav
-        class="hidden md:flex gap-8 items-center bg-white/5 backdrop-blur-lg z-20 px-6 py-2 rounded-full border border-white/10"
+        class="hidden md:flex gap-8 items-center bg-(--color-tabs) backdrop-blur-lg z-20 px-6 py-2 rounded-full border border-white/10"
       >
         <a
           href="#hero"
@@ -43,7 +47,7 @@
 
       <button
         id="theme-toggle"
-        class="p-2 rounded-full hover:bg-white/10 transition-colors"
+        class="p-2 rounded-full bg-(--color-tabs) backdrop-blur-lg hover:bg-white/10 transition-colors"
         aria-label="Toggle Theme"
       >
         <!-- Sun Icon (showing in dark mode) -->
@@ -238,7 +242,7 @@
     </section>
 
     <!-- ......... ABOUT SECTION .............. -->
-    <section id="about">
+    <section id="about" class="animate-fade-in">
       <div
         class="my-20 mx-10 flex flex-col-reverse gap-20 lg:flex-row justify-center items-center"
       >
