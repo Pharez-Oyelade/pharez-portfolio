@@ -10,8 +10,8 @@
   /* --color-text-primary: #111827; */ 
   --color-text-primary: #000000; 
   --color-text-secondary: #4b5563;
-  --color-accent: #2563eb; /* Blue-600 */
-  --color-accent-hover: #1d4ed8; /* Blue-700 */
+  --color-accent: #eb2525; /* Blue-600 */
+  --color-accent-hover: #d81d1d; /* Blue-700 */
   --color-card-bg: #f3f4f6;
   --color-border: #e5e7eb;
   --color-nav: #000000;
@@ -21,12 +21,13 @@
 
 :root[class~="dark"] {
   /* Dark Mode */
-  --color-background: #0B0E14; /* Deep dark blue/black */
+  --color-background: #0B0E14;
+  /* --color-background: #0f0101; */
   --color-background-secondary: #141820;
   --color-text-primary: #ffffff;
   --color-text-secondary: #9ca3af; /* Gray-400 */
-  --color-accent: #3b82f6; /* Blue-500 */
-  --color-accent-hover: #2563eb; /* Blue-600 */
+  --color-accent: #f63b3b; /* Blue-500 */
+  --color-accent-hover: #eb2525; /* Blue-600 */
   --color-card-bg: #1f2937;
   --color-border: #374151;
   --color-nav: #ffffff;
@@ -129,14 +130,16 @@ nav a.active, nav a:hover {
 
 /* Utilities */
 .text-gradient {
-  background: linear-gradient(to right, #ffffff, #a5b4fc); /* Default for dark mode actually */
+  /* background: linear-gradient(to right, #ffffff, #a5b4fc); */
+  background: linear-gradient(to right, #ffffff, #fca5a5); /* Default for dark mode actually */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 :root:not([class~="dark"]) .text-gradient {
-    background: linear-gradient(to right, #111827, #4f46e5);
+    /* background: linear-gradient(to right, #111827, #4f46e5); */
+    background: linear-gradient(to right, #271111, #e54646);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
