@@ -99,6 +99,25 @@ nav a.active, nav a:hover {
   fill: var(--color-text-secondary);
 }
 
+#aside-links {
+  width: 150px;
+  
+}
+
+#aside-links a {
+  background: transparent;
+  width: 100%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#aside-links a.active {
+  background: rgba(255, 0, 0, 0.3);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
 /* .indicator-text {
   position: relative;
 }

@@ -47,6 +47,56 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* -------------------------------------------------------------------------- */
+  /*                                Aside Links                                 */
+  /* -------------------------------------------------------------------------- */
+  const asideLinks = document.querySelectorAll("#aside-links a");
+  const asideSections = document.querySelectorAll("#article-content > div[id]");
+  const article = document.querySelector("#article-content");
+
+  if (asideLinks.length > 0) {
+    asideLinks[0].classList.add("active");
+  }
+
+  asideLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      asideLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          asideLinks.forEach((link) => {
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === `#${entry.target.id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      root: null, // window scroll
+      threshold: 0.9,
+    },
+  );
+
+  asideSections.forEach((section) => observer.observe(section));
+
+  /* -------------------------------------------------------------------------- */
   /*                                Theme Toggle                                */
   /* -------------------------------------------------------------------------- */
   const toggleBtn = document.getElementById("theme-toggle");
