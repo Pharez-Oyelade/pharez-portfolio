@@ -336,9 +336,6 @@
   .min-h-\[100dvh\] {
     min-height: 100dvh;
   }
-  .min-h-screen {
-    min-height: 100vh;
-  }
   .w-0\.5 {
     width: calc(var(--spacing) * 0.5);
   }
@@ -1371,10 +1368,16 @@ nav a.active, nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 #aside-links a.active {
-  background: rgba(255, 0, 0, 0.3);
-  color: black;
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+  font-weight: 600;
   padding: 5px 10px;
   border-radius: 10px;
+}
+#aside-links a:hover {
+  color: red;
+  font-weight: 600;
+  transform: translateX(8px);
 }
 .project-btn {
   background: none;

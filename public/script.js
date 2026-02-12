@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       root: null, // window scroll
-      threshold: 0.9,
+      threshold: 0.85,
     },
   );
 

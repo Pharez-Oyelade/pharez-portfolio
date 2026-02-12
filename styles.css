@@ -112,10 +112,18 @@ nav a.active, nav a:hover {
 }
 
 #aside-links a.active {
-  background: rgba(255, 0, 0, 0.3);
-  color: black;
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+  font-weight: 600;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+#aside-links a:hover {
+  color: red;
+  font-weight: 600;
+  transform: translateX(8px);
+  
 }
 
 /* .indicator-text {
