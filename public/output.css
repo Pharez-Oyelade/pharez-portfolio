@@ -265,6 +265,9 @@
   .z-50 {
     z-index: 50;
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
@@ -276,6 +279,9 @@
   }
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
+  }
+  .my-40 {
+    margin-block: calc(var(--spacing) * 40);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -327,6 +333,9 @@
   }
   .h-\[30\%\] {
     height: 30%;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
   }
   .h-auto {
     height: auto;
@@ -885,6 +894,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         scale: 1.05;
+      }
+    }
+  }
+  .group-hover\:border-\(--color-accent\) {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--color-accent);
       }
     }
   }
