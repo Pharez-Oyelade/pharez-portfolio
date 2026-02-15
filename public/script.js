@@ -136,3 +136,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/* -------------------------------------------------------------------------- */
+/*                                Scroll Animation                            */
+/* -------------------------------------------------------------------------- */
+
+// const observeFade = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("animate-fade-in-up");
+//     }
+//   });
+// });
+
+// document.querySelectorAll(".reveal").forEach((el) => observeFade.observe(el));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "0px 0px -60px 0px",
+    },
+  );
+
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+});

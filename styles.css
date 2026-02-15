@@ -84,6 +84,21 @@ body {
   background: rgba(var(--color-accent), 0.1);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 nav a {
   text-decoration: none;
   color: var(--color-nav-secondary);
@@ -176,13 +191,16 @@ nav a.active, nav a:hover {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(80px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+
+
 
 .animate-fade-in-up {
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
