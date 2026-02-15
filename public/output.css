@@ -1396,7 +1396,7 @@ body {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(80px);
+  transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal.is-visible {
@@ -1464,7 +1464,7 @@ nav a.active, nav a:hover {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
