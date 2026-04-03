@@ -104,9 +104,9 @@
       class="relative min-h-dvh flex flex-col justify-center items-center text-center px-4 pt-20 pb-20 overflow-hidden"
     >
       <!-- Background Glow -->
-      <!-- <div
+      <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"
-      ></div> -->
+      ></div>
       <!-- <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-red-500/10 rounded-full blur-[120px] pointer-events-none"
       ></div> -->
@@ -658,28 +658,13 @@
                     class="flex flex-row-reverse items-center gap-2 group/child cursor-pointer text-(--color-text-secondary)"
                   >
                     <a
-                      href="https://github.com/Pharez-Oyelade/aesthesia-portfolio"
-                      target="_blank"
+                      href="#case-study"
                       class="project-btn"
-                      >Source Code</a
+                      >Case Study</a
                     >
                     <span
                       class="icon group-hover/child:-translate-x-1 transition-transform ease-in"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-code-icon lucide-code"
-                      >
-                        <path d="m16 18 6-6-6-6" />
-                        <path d="m8 6-6 6 6 6" /></svg
-                    ></span>
+                      ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
                   </div>
                 </div>
               </div>
@@ -755,10 +740,81 @@
           </div>
         </div> -->
 
-        <!-- ......... NXT VENDOR .............. -->
+        <!-- ......... ARCA .............. -->
         <div class="py-20">
           <div
             class="flex flex-col lg:flex-row justify-between items-center gap-20 group"
+          >
+            <a
+              href="https://arca-jade.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full lg:w-1/2 overflow-hidden relative"
+            >
+              <img
+                src="./images/arca_hero.png"
+                alt=""
+                class="card w-full h-full group-hover:scale-[1.05] transition-transform ease-in"
+              />
+              <div
+                class="absolute bottom-0 bg-linear-to-t from-white via-20% to-transparent w-full h-1/4 z-20"
+              ></div>
+            </a>
+
+            <div class="w-full lg:w-1/2 flex flex-col gap-5">
+              <h4 class="font-bold text-4xl">
+                Arca - Real Estate Web Platform
+              </h4>
+              <p class="text-lg text-(--color-text-secondary)">
+                A full featured real estate platform built with Next.js,
+                featuring property listings, dynamic filtering, agent profiles,
+                and a detailed property page with a live mortgage calculator.
+              </p>
+              <div class="flex flex-wrap gap-2 items-center">
+                <p class="bg-(--color-tabs) py-1 px-3 rounded-2xl">Next.js</p>
+                <p class="bg-(--color-tabs) py-1 px-3 rounded-2xl">
+                  TypeScript
+                </p>
+                <p class="bg-(--color-tabs) py-1 px-3 rounded-2xl">
+                  TailwindCSS
+                </p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="flex items-center gap-2 group/child cursor-pointer">
+                  <a
+                    href="https://arca-jade.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-btn"
+                    >View Project</a
+                  >
+                  <span
+                    class="icon group-hover/child:translate-x-1 transition-transform ease-in"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right-icon lucide-arrow-right"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" /></svg
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ......... NXT VENDOR .............. -->
+        <div class="py-20">
+          <div
+            class="flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-20 group"
           >
             <a
               href="https://store-v1-seven.vercel.app/"
@@ -837,7 +893,7 @@
         <!-- ......... FRAMERATES .............. -->
         <div class="py-20">
           <div
-            class="flex flex-col lg:flex-row justify-between items-center gap-20 group"
+            class="flex flex-col-reverse lg:flex-row-reverse justify-between items-center gap-20 group"
           >
             <div class="w-full lg:w-1/2 flex flex-col gap-5">
               <h4 class="font-bold text-4xl">FrameRates Movie Search App</h4>
@@ -895,7 +951,7 @@
     </section>
 
     <!-- ......... CASE STUDY SECTION .............. -->
-    <section id="case-study " class="relative py-20">
+    <section id="case-study" class="relative py-20">
       <!-- Background Glow -->
       <div
         class="absolute top-0 right-0 w-200 h-200 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"
