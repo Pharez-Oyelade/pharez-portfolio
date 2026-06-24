@@ -12,14 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetSection = document.querySelector(targetId);
+      const targetHref = link.getAttribute("href");
+      
+      // Only prevent default and smooth scroll if it's an on-page anchor link
+      if (targetHref.startsWith("#")) {
+        e.preventDefault();
+        const targetSection = document.querySelector(targetHref);
 
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: "smooth",
-        });
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
       }
 
       navLinks.forEach((l) => l.classList.remove("active"));
@@ -133,6 +137,28 @@ document.addEventListener("DOMContentLoaded", () => {
         sunIcon.style.display = "block";
         moonIcon.style.display = "none";
       }
+    });
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /*                                Carousel Scroll                             */
+  /* -------------------------------------------------------------------------- */
+  const scrollLeftBtn = document.getElementById("scroll-left");
+  const scrollRightBtn = document.getElementById("scroll-right");
+  const carouselContainer = document.getElementById("carousel-container");
+
+  if (scrollLeftBtn && scrollRightBtn && carouselContainer) {
+    const getScrollAmount = () => {
+      const card = carouselContainer.querySelector("a");
+      return card ? card.offsetWidth + 24 : 400; // 24px is gap-6
+    };
+
+    scrollLeftBtn.addEventListener("click", () => {
+      carouselContainer.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+    });
+
+    scrollRightBtn.addEventListener("click", () => {
+      carouselContainer.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
     });
   }
 });
